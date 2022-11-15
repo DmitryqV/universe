@@ -6,7 +6,7 @@ import * as Views from "./views/export";
 import { Provider } from "react-redux";
 import { store } from './store/store';
 
-const AppRoutting: FunctionComponent = () => (
+const AppRouting: FunctionComponent = () => (
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<Views.LoginView />} />
@@ -18,6 +18,6 @@ const AppRoutting: FunctionComponent = () => (
 
 export const AppCore: FunctionComponent = () => (
   <Provider store={store}>
-    <AppRoutting />
+    <AppRouting />
   </Provider>
 );
