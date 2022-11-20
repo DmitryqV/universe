@@ -4,7 +4,9 @@ import * as Component from "../../components/export";
 
 export const MainView: FunctionComponent = () => {
   return (
-    <Component.NavbarComponent />
-    <section>Main view</section>
+    <>
+      <Component.NavbarComponent />
+      <section>Main view</section>
+    </>
   );
 };
