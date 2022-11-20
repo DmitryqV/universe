@@ -30,8 +30,8 @@
 .button {
   width: 240px;
   height: 50px;
-  background-color: #2B3FF5;
-  box-shadow: 0px 0px 10px #2B3FF5;
+  background-color: #000;
+  box-shadow: 0px 0px 10px #000;
   border-radius: 5px;
   color: #fff;
   font-size: 16px;
@@ -40,6 +40,6 @@
 }
 
 .button:hover {
-  background-color: #001aff;
-  box-shadow: 0px 0px 10px #001aff;
+  background-color: #444;
+  box-shadow: 0px 0px 10px #444;
 }
