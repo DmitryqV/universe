@@ -1,0 +1,22 @@
+.navbar {
+  height: 60px;
+  width: calc(100% - 100px);
+  margin: 36px 50px;
+  background-color: black;
+  color: #fff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding-left: 28px;
+  gap: 8px;
+}
+
+.navbar__text {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
