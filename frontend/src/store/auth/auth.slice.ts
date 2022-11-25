@@ -1,8 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 interface IAuthSlice {
-  email: "";
-  password: "";
+  email: string;
+  password: string;
 }
 
 const initialState: IAuthSlice =  {
