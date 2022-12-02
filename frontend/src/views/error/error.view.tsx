@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from "react";
 
-export const ErrorView: FunctionComponent = () => {
+export const Error: FunctionComponent = () => {
   return (
     <p>Not found</p>
   );

@@ -3,10 +3,10 @@ import s from "./main.module.scss";
 import * as Layout from "../../layout/responsive/responsive.layout";
 import * as Component from "../../components/export";
 
-export const MainView: FunctionComponent = () => (
-  <Layout.ResponsiveNavbarLayout>
+export const Main: FunctionComponent = () => (
+  <Layout.ResponsiveNavbar>
     <section className={s.main}>
-      <Component.PersonCardComponent />
+      <Component.PersonCard />
     </section>
-  </Layout.ResponsiveNavbarLayout>
+  </Layout.ResponsiveNavbar>
 );

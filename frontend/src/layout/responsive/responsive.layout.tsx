@@ -6,7 +6,7 @@ interface IResponsiveLayout {
   children: JSX.Element;
 }
 
-export const ResponsiveLayout: FunctionComponent<IResponsiveLayout> = ({
+export const Responsive: FunctionComponent<IResponsiveLayout> = ({
   children,
 }) => (
   <>
@@ -16,13 +16,13 @@ export const ResponsiveLayout: FunctionComponent<IResponsiveLayout> = ({
   </>
 );
 
-export const ResponsiveNavbarLayout: FunctionComponent<IResponsiveLayout> = ({
+export const ResponsiveNavbar: FunctionComponent<IResponsiveLayout> = ({
   children,
 }) => (
-  <ResponsiveLayout>
+  <Responsive>
     <>
-      <Component.NavbarComponent />
+      <Component.Navbar />
       {children}
     </>
-  </ResponsiveLayout>
+  </Responsive>
 );

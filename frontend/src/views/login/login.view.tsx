@@ -4,7 +4,7 @@ import { useActions } from "./../../hooks/redux.useActions";
 import { useTypedSelector } from "./../../hooks/redux.useTypedSelector";
 import { Link } from "react-router-dom";
 
-export const LoginView: FunctionComponent = () => {
+export const Login: FunctionComponent = () => {
   const { changeEmail, changePassword } = useActions();
   const payload = useTypedSelector((state) => state.auth);
 

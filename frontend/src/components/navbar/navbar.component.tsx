@@ -2,7 +2,7 @@ import React, { FunctionComponent } from "react";
 import { useParams, Link } from "react-router-dom";
 import s from "./navbar.module.scss";
 
-export const NavbarComponent: FunctionComponent = () => {
+export const Navbar: FunctionComponent = () => {
   const { username } = useParams();
 
   return (

@@ -2,7 +2,7 @@ import React, { FunctionComponent } from "react";
 import s from "./person__card.module.scss";
 import { useParams } from "react-router-dom";
 
-export const PersonCardComponent: FunctionComponent = () => {
+export const PersonCard: FunctionComponent = () => {
   const { username } = useParams();
 
   return (
