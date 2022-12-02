@@ -10,7 +10,7 @@ const AppRouting: FunctionComponent = () => (
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<Views.LoginView />} />
-      <Route path="/:username" element={<Views.MainView />} />
+      <Route path="/@:username" element={<Views.MainView />} />
       <Route path="*" element={<Views.ErrorView />} />
     </Routes>
   </BrowserRouter>
