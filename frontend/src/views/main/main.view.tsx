@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from "react";
 import s from "./main.module.scss";
-import { Layout } from "../../layout/export";
+import { Layout } from "../../layouts/export";
 import { Component } from "../../components/export";
 
 export const Main: FunctionComponent = () => (

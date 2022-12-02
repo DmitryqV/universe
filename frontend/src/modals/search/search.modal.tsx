@@ -1,10 +1,10 @@
 import React, { FunctionComponent } from "react";
-import * as Layout from "../../layout/responsive/responsive.layout";
+import { Layout } from "../../layouts/export";
 
-export const SearchModal: FunctionComponent = () => {
+export const Search: FunctionComponent = () => {
   return (
-    <Layout.ResponsiveLayout>
+    <Layout.Responsive>
       <div>Modal content</div>
-    </Layout.ResponsiveLayout>
+    </Layout.Responsive>
   );
 };
