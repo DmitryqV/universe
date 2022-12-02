@@ -7,27 +7,25 @@ export const NavbarComponent: FunctionComponent = () => {
 
   return (
     <>
-      <div className={s.navbar}>
-        <div className={s.layer__content}>
-          <ul className={s.navbar__menu}>
-            <li className={`${s.navbar__menu__item} ${s.navbar__logo}`}>
-              reconnection
-            </li>
-            <li className={s.navbar__menu__item}>поиск</li>
-            <li className={s.navbar__menu__item}>лента</li>
-          </ul>
-          <div className={s.user__content}>
-            <Link to={`/@${username}`} className={s.username}>
-              {username}
-            </Link>
-            <img
-              className={s.avatar}
-              src={require("../../img/avatar.jpg")}
-              alt={username}
-            />
-          </div>
+      <header className={s.navbar}>
+        <ul className={s.navbar__menu}>
+          <li className={`${s.navbar__menu__item} ${s.navbar__logo}`}>
+            reconnection
+          </li>
+          <li className={s.navbar__menu__item}>поиск</li>
+          <li className={s.navbar__menu__item}>лента</li>
+        </ul>
+        <div className={s.user__content}>
+          <Link to={`/@${username}`} className={s.username}>
+            {username}
+          </Link>
+          <img
+            className={s.avatar}
+            src={require("../../img/avatar.jpg")}
+            alt={username}
+          />
         </div>
-      </div>
+      </header>
     </>
   );
 };

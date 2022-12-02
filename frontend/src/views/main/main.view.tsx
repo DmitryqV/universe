@@ -1,12 +1,11 @@
 import React, { FunctionComponent } from "react";
 import s from "./main.module.scss";
-import * as Component from "../../components/export";
+import * as Layout from "../../layout/responsive/responsive.layout";
 
 export const MainView: FunctionComponent = () => {
   return (
-    <>
-      <Component.NavbarComponent />
+    <Layout.ResponsiveLayout>
       <section>Main view</section>
-    </>
+    </Layout.ResponsiveLayout>
   );
 };
