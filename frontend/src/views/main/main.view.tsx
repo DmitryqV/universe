@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from "react";
 import s from "./main.module.scss";
-import * as Layout from "../../layout/responsive/responsive.layout";
-import * as Component from "../../components/export";
+import { Layout } from "../../layouts/export";
+import { Component } from "../../components/export";
 
 export const Main: FunctionComponent = () => (
   <Layout.ResponsiveNavbar>

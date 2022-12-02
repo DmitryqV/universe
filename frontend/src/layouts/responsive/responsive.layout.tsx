@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from "react";
 import s from "./responsive.module.scss";
-import * as Component from "../../components/export";
+import { Component } from "../../components/export";
 
 interface IResponsiveLayout {
   children: JSX.Element;
