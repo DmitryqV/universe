@@ -1,7 +1,10 @@
 import React, { FunctionComponent } from "react";
 import s from "./person__card.module.scss";
+import { useParams } from "react-router-dom";
 
 export const PersonCardComponent: FunctionComponent = () => {
+  const { username } = useParams();
+
   return (
     <section className={s.main}>
       <article className={s.poster}>
@@ -10,7 +13,7 @@ export const PersonCardComponent: FunctionComponent = () => {
             <div className={s.user__meta__info}>
               <img className={s.avatar} src={require("../../img/avatar.jpg")} />
               <div>
-                <b className={s.username}>centenario</b>
+                <b className={s.username}>{username}</b>
                 <ul className={s.social}>
                   <li className={s.social__link}>Подписаться</li>
                 </ul>
