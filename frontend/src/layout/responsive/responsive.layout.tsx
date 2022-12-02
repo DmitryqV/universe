@@ -8,15 +8,21 @@ interface IResponsiveLayout {
 
 export const ResponsiveLayout: FunctionComponent<IResponsiveLayout> = ({
   children,
-}) => {
-  return (
+}) => (
+  <>
+    <section className={s.layout}>
+      <section className={s.responsive}>{children}</section>
+    </section>
+  </>
+);
+
+export const ResponsiveNavbarLayout: FunctionComponent<IResponsiveLayout> = ({
+  children,
+}) => (
+  <ResponsiveLayout>
     <>
-      <section className={s.layout}>
-        <section className={s.responsive}>
-          <Component.NavbarComponent />
-          {children}
-        </section>
-      </section>
+      <Component.NavbarComponent />
+      {children}
     </>
-  );
-};
+  </ResponsiveLayout>
+);
