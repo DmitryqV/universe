@@ -4,11 +4,16 @@
 }
 
 .poster {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 500px;
-  background-color: #222222;
+  height: 400px;
+  background-color: #f9f9f9;
   border-radius: 20px;
-  color: #fff;
+  margin-top: 10px;
+  color: #222;
 }
 
 .poster__layout {
@@ -17,10 +22,61 @@
 }
 
 .avatar {
-  width: 250px;
-  height: 250px;
-  background-color: #fff;
+  width: 150px;
+  height: 150px;
+  background-color: #000;
   border-radius: 50%;
-  margin-top: 50px;
-  margin-left: 50px;
 }
+
+.user__group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.username {
+  font-size: 30px;
+}
+
+.user__meta__info {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.user__description {
+  width: 400px;
+  height: auto;
+  font-size: 16px;
+  color: #22222295;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+}
+
+.social__link {
+  list-style-type: none;
+  font-size: 16px;
+  background-color: #222;
+  color: #fff;
+  cursor: pointer;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.attach__item {
+  font-weight: bold;
+  color: #222222;
+  list-style-type: none;
+}
+
+.attach {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
