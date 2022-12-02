@@ -4,7 +4,7 @@ import * as Layout from "../../layout/responsive/responsive.layout";
 
 export const MainView: FunctionComponent = () => {
   return (
-    <Layout.ResponsiveLayout>
+    <Layout.ResponsiveNavbarLayout>
       <section className={s.main}>
         <article className={s.poster}>
           <div className={s.poster__layout}>
@@ -35,6 +35,6 @@ export const MainView: FunctionComponent = () => {
           </div>
         </article>
       </section>
-    </Layout.ResponsiveLayout>
+    </Layout.ResponsiveNavbarLayout>
   );
 };
