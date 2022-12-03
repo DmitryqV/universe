@@ -10,7 +10,7 @@ export const Main: FunctionComponent = () => {
         <Component.PersonCard />
         <Component.ContentController />
         <section className={s.card__container}>
-          {[1, 2, 3, 4, 5, 6].map((el: number) => (
+          {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((el: number) => (
             <Component.ContentCard key={el} />
           ))}
         </section>
