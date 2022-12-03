@@ -1,0 +1,41 @@
+.content__controll__container {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.content__controll {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+  height: 60px;
+}
+
+.content__controll__item {
+  width: 50%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #22222280;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.content__controll__item__active {
+  color: #222222;
+}
+
+.content__controll__line {
+  transition: .5s;
+  background-color: #222222;
+  border: 1px solid #222222;
+  position: absolute;
+  width: 200px;
+  height: 1px;
+  bottom: 0;
+}

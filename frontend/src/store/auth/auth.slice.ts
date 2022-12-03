@@ -11,7 +11,7 @@ const initialState: IAuthSlice =  {
 };
 
 export const AuthSlice = createSlice({
-  name: "auth",
+  name: "Auth",
   initialState,
   reducers: {
     changeEmail: (state, action) => {
