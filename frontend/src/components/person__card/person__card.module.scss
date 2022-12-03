@@ -6,7 +6,8 @@
   align-items: center;
   width: 100%;
   height: 400px;
-  background-color: #f9f9f9;
+  // background-color: #f9f9f9;
+  background: linear-gradient(0deg, #fff 0%, #00bfff 100%);
   border-radius: 20px;
   margin-top: 10px;
   color: #222;
@@ -45,7 +46,7 @@
   width: 400px;
   height: auto;
   font-size: 16px;
-  color: #22222295;
+  color: #00000095;
 }
 
 .social {
@@ -62,6 +63,9 @@
   padding: 5px;
   text-align: center;
   border-radius: 5px;
+  &:hover {
+    background-color: #414141;
+  }
 }
 
 .attach__item {
