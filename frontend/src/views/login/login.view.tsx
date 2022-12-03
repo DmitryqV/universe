@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 export const Login: FunctionComponent = () => {
   const { changeEmail, changePassword } = useActions();
-  const payload = useTypedSelector((state) => state.auth);
+  const payload = useTypedSelector((state) => state.Auth);
 
   return (
     <section className={s.form__layout}>
