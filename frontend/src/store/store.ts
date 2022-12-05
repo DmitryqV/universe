@@ -1,10 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
 import thunk from "redux-thunk";
 
-import { AuthReducer } from "./auth/auth.slice";
-import { ContentControllerReducer } from "./controller/controller.slice";
-import { CardDataReducer } from './data/data.slice';
-import { SearchModalReducer } from "./modal/search.modal.slice";
+import { AuthReducer } from "./slices/auth/auth.slice";
+import { ContentControllerReducer } from "./slices/controller/controller.slice";
+import { CardDataReducer } from './slices/data/data.slice';
+import { SearchModalReducer } from "./slices/modal/search.modal.slice";
+import { NavbarPopupReducer } from './slices/popup/popup.slice';
 
 export const store = configureStore({
   reducer: {
@@ -12,6 +13,7 @@ export const store = configureStore({
     ContentController: ContentControllerReducer,
     CardData: CardDataReducer,
     SearchModal: SearchModalReducer,
+    NavbarPopup: NavbarPopupReducer,
   },
   middleware: [thunk],
 });

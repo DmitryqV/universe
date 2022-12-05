@@ -1,0 +1,24 @@
+.popup {
+  display: flex;
+  position: absolute;
+  top: 55px;
+  right: -1px;
+  width: 150px;
+  height: auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 20px 0px rgba(39, 120, 182, 0.2);
+  z-index: 3;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+.popup__item {
+  cursor: pointer;
+  list-style-type: none;
+  &:hover {
+    font-weight: bold;
+  }
+}

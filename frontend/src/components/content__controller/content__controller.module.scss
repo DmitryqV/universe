@@ -16,6 +16,8 @@
 }
 
 .content__controll__item {
+  display: flex;
+  gap: 10px;
   user-select: none;
   width: 50%;
   height: 60px;
