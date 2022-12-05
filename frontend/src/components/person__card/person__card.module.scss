@@ -34,7 +34,12 @@
 }
 
 .username {
+  display: flex;
+  flex-direction: row;
   font-size: 30px;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
 }
 
 .user__meta__info {
@@ -82,3 +87,12 @@
   justify-content: space-between;
 }
 
+.verify {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 10px;
+}
