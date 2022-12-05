@@ -1,24 +1,24 @@
 .backdrop {
-    height: 100%;
-    width: 100%;
-    left: 0;
-    position: fixed;
-    z-index: 999;
-    background-color: #ffffff95;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  position: fixed;
+  z-index: 999;
+  background-color: #ffffff95;
 }
 
 .search__container {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    gap: 10px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 10px;
 }
 
 .search__input {
-    width: 100%;
-    background: none;
-    height: 50px;
-    font-size: 40px;
-    font-weight: bold;
+  width: 100%;
+  background: none;
+  height: 50px;
+  font-size: 40px;
+  font-weight: bold;
 }
