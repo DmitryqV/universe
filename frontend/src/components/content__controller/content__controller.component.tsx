@@ -29,7 +29,7 @@ export const ContentController: FunctionComponent = () => {
             s.content__controll__item__active
           }`}
           onMouseLeave={() =>
-            changeTransform(payload.currentLayout === "posts" ? 0 : 200)
+            changeTransform(payload.currentLayout === "broadcast" ? 200 : 0)
           }
           onMouseMove={() => changeTransform(200)}
           onClick={() => changeLayout("broadcast")}
