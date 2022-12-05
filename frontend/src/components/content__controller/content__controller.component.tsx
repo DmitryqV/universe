@@ -2,6 +2,7 @@ import React, { FunctionComponent, useEffect } from "react";
 import s from "./content__controller.module.scss";
 import { useActions } from "./../../hooks/redux.useActions";
 import { useTypedSelector } from "./../../hooks/redux.useTypedSelector";
+import {Icons} from "../../assets/components/export"
 
 export const ContentController: FunctionComponent = () => {
   const payload = useTypedSelector((state) => state.ContentController);
@@ -67,6 +68,7 @@ export const ContentController: FunctionComponent = () => {
           }}
         >
           Публикации
+          <Icons.Post />
         </li>
         <li
           className={`${s.content__controll__item} ${
@@ -102,6 +104,7 @@ export const ContentController: FunctionComponent = () => {
           }}
         >
           Эфиры
+          <Icons.Broadcast />
         </li>
         <div
           className={s.content__controll__line}
