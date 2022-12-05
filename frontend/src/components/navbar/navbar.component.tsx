@@ -1,6 +1,7 @@
 import React, { FunctionComponent } from "react";
 import { useParams, Link } from "react-router-dom";
 import s from "./navbar.module.scss";
+import { Icons } from "../../assets/components/export";
 
 export const Navbar: FunctionComponent = () => {
   const { username } = useParams();
@@ -14,13 +15,19 @@ export const Navbar: FunctionComponent = () => {
           </li>
         </ul>
         <ul className={s.navigation}>
-            <li className={s.navigation__item}>
-              <a className={s.navbar__menu__item}>поиск</a>
-            </li>
-            <li className={s.navigation__item}>
-              <a className={s.navbar__menu__item}>лента</a>
-            </li>
-          </ul>
+          <li className={s.navigation__item}>
+            <a className={s.navbar__menu__item}>
+              поиск
+              <Icons.Search />
+            </a>
+          </li>
+          <li className={s.navigation__item}>
+            <a className={s.navbar__menu__item}>
+              лента
+              <Icons.Post />
+            </a>
+          </li>
+        </ul>
         <div className={s.user__content}>
           <Link to={`/@${username}`} className={s.username}>
             {username}
