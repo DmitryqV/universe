@@ -4,6 +4,10 @@
   gap: 7px;
   width: 400px;
   height: 250px;
+  cursor: pointer;
+  &:hover > .card__poster {
+    background-color: #22222280;
+  }
 }
 
 .card__poster {

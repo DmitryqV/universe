@@ -38,7 +38,6 @@
 }
 
 .navbar__menu {
-  width: 50%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -59,4 +58,16 @@
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+
+.navigation {
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+} 
+
+.navigation__item {
+  width: 200px;
+  list-style-type: none;
+  text-transform: capitalize;
 }
