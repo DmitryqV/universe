@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react';
 import s from "./content__card.module.scss";
-import { ICardData } from './../../store/data/data.slice';
+import { ICardData } from './../../store/slices/data/data.slice';
 
 interface IContentCard {
   card: ICardData,

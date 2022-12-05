@@ -13,6 +13,7 @@
 }
 
 .username {
+  cursor: pointer;
   text-decoration: none;
   color: #2b2b2b;
   font-family: "Inter";
@@ -20,13 +21,12 @@
 }
 
 .user__content {
-  cursor: pointer;
   display: flex;
   gap: 8px;
   align-items: center;
+  position: relative;
   &:hover > .username {
     font-weight: bold;
-    
   }
 }
 
