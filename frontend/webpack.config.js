@@ -1,6 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 const isProduction = process.env.NODE_ENV == "production";
 
@@ -9,7 +10,7 @@ const config = {
   output: {
     path: path.resolve(__dirname, "dist"),
   },
-  devtool: 'inline-source-map',
+  devtool: "inline-source-map",
   devServer: {
     compress: true,
     port: process.env.PORT || 5555,
@@ -18,8 +19,9 @@ const config = {
     hot: true,
   },
   plugins: [
+    new CopyWebpackPlugin({ patterns: [{ from: "src/public", to: "public" }] }),
     new HtmlWebpackPlugin({
-      template: "index.html",
+      template: "./src/public/index.html",
     }),
 
     new MiniCssExtractPlugin(),
