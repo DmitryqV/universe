@@ -1,9 +1,15 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+enum CardType {
+  "broadcast",
+  "post"
+}
+
 export interface ICardData {
   title: string;
   author: string;
-  views: string
+  views: string;
+  type: CardType;
 }
 
 interface ICardDataSlice {

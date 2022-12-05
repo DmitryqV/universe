@@ -14,16 +14,19 @@ export const ContentController: FunctionComponent = () => {
         title: "Post title",
         author: "@centenario",
         views: "100",
+        type: "post"
       },
       {
         title: "Post title 3123123123",
         author: "@centenario",
         views: "100",
+        type: "post"
       },
       {
         title: "Post title 3122222222",
         author: "@centenario",
         views: "1003123123123123",
+        type: "post"
       },
     ]);
   }, []);
@@ -47,16 +50,19 @@ export const ContentController: FunctionComponent = () => {
                 title: "Post title",
                 author: "@centenario",
                 views: "100",
+                type: "post"
               },
               {
                 title: "Post title 3123123123",
                 author: "@centenario",
                 views: "100",
+                type: "post"
               },
               {
                 title: "Post title 3122222222",
                 author: "@centenario",
                 views: "1003123123123123",
+                type: "post"
               },
             ]);
           }}
@@ -80,16 +86,19 @@ export const ContentController: FunctionComponent = () => {
                 title: "Broadcast title",
                 author: "@centenario",
                 views: "100",
+                type: "broadcast"
               },
               {
                 title: "Broadcast title 3123123123",
                 author: "@centenario",
                 views: "100",
+                type: "broadcast"
               },
               {
                 title: "Broadcast title 3122222222",
                 author: "@centenario",
                 views: "1003123123123123",
+                type: "broadcast"
               },
             ]);
           }}
