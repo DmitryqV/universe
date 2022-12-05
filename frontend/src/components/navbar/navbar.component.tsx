@@ -2,12 +2,16 @@ import React, { FunctionComponent } from "react";
 import { useParams, Link } from "react-router-dom";
 import s from "./navbar.module.scss";
 import { Icons } from "../../assets/components/export";
+import { Modals } from "../../modals/export";
+import { useActions } from "../../hooks/redux.useActions";
 
 export const Navbar: FunctionComponent = () => {
+  const { changeShow } = useActions();
   const { username } = useParams();
 
   return (
     <>
+      
       <header className={s.navbar}>
         <ul className={s.navbar__menu}>
           <li className={`${s.navbar__menu__item} ${s.navbar__logo}`}>
@@ -16,7 +20,10 @@ export const Navbar: FunctionComponent = () => {
         </ul>
         <ul className={s.navigation}>
           <li className={s.navigation__item}>
-            <a className={s.navbar__menu__item}>
+            <a
+              className={s.navbar__menu__item}
+              onClick={() => changeShow(true)}
+            >
               поиск
               <Icons.Search />
             </a>
@@ -34,7 +41,7 @@ export const Navbar: FunctionComponent = () => {
           </Link>
           <img
             className={s.avatar}
-            src={require("../../img/avatar.jpg")}
+            src={require("../../assets/img/avatar.jpg")}
             alt={username}
           />
         </div>
