@@ -11,6 +11,7 @@ export const Login: FunctionComponent = () => {
   return (
     <section className={s.form__layout}>
       <section className={s.form}>
+        <p className={s.navbar__logo}>reconnection</p>
         <input
           className={s.input}
           type="email"
