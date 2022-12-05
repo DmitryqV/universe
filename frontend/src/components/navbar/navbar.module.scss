@@ -64,7 +64,10 @@
   width: 400px;
   display: flex;
   flex-direction: row;
-  & > .navbar__menu__item {
-    width: 50%;
-  }
 } 
+
+.navigation__item {
+  width: 200px;
+  list-style-type: none;
+  text-transform: capitalize;
+}
