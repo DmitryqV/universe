@@ -14,13 +14,13 @@ export const Search: FunctionComponent = () => {
         <div className={s.backdrop}>
           <Layout.Responsive>
             <div className={s.search__container}>
-              <Icons.Search />
+              <Icons.Search className={s.search__icon} />
               <input
                 className={s.search__input}
                 placeholder="Type something"
                 type="text"
               />
-              <div onClick={() => changeShow(false)}>X</div>
+              <div onClick={() => changeShow(false)}><Icons.Close className={s.close__icon} /></div>
             </div>
           </Layout.Responsive>
         </div>

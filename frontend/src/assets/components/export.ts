@@ -6,7 +6,8 @@ import { Search } from "./search/search.icon";
 import { Settings } from "./settings/settings.icon";
 import { Views } from "./views/views.icon";
 import { Verify } from "./verify/verify.icon";
-import { Reactions } from "./reactions/reactions.icon"
+import { Reactions } from "./reactions/reactions.icon";
+import { Close } from "./close/close.icon";
 
 export const Icons = {
     Broadcast,
@@ -18,4 +19,5 @@ export const Icons = {
     Views,
     Verify,
     Reactions,
+    Close,
 }
