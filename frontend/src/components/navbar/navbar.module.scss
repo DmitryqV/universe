@@ -49,6 +49,9 @@
   cursor: pointer;
   list-style-type: none;
   text-transform: capitalize;
+  display: flex;  
+  align-items: center;
+  gap: 4px;
   &:hover {
     font-weight: bold;
   }
