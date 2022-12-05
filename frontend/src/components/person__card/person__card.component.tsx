@@ -11,7 +11,7 @@ export const PersonCard: FunctionComponent = () => {
       <div className={s.poster__layout}>
         <div className={s.user__group}>
           <div className={s.user__meta__info}>
-            <img className={s.avatar} src={require("../../img/avatar.jpg")} />
+            <img className={s.avatar} src={require("../../assets/img/avatar.jpg")} />
             <div>
               <b className={s.username}>
                 {username}

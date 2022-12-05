@@ -3,7 +3,7 @@ import s from "./main.module.scss";
 import { Layout } from "../../layouts/export";
 import { Component } from "../../components/export";
 import { useTypedSelector } from "./../../hooks/redux.useTypedSelector";
-import { ICardData } from './../../store/data/data.slice';
+import { ICardData } from "./../../store/data/data.slice";
 
 export const Main: FunctionComponent = () => {
   const payload = useTypedSelector((state) => state.CardData);
