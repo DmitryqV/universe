@@ -12,9 +12,11 @@ export const Navbar: FunctionComponent = () => {
           <li className={`${s.navbar__menu__item} ${s.navbar__logo}`}>
             reconnection
           </li>
-          <li className={s.navbar__menu__item}>поиск</li>
-          <li className={s.navbar__menu__item}>лента</li>
         </ul>
+        <ul className={s.navigation}>
+            <li className={s.navbar__menu__item}>поиск</li>
+            <li className={s.navbar__menu__item}>лента</li>
+          </ul>
         <div className={s.user__content}>
           <Link to={`/@${username}`} className={s.username}>
             {username}

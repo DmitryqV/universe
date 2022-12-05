@@ -38,7 +38,6 @@
 }
 
 .navbar__menu {
-  width: 50%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -60,3 +59,12 @@
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+
+.navigation {
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  & > .navbar__menu__item {
+    width: 50%;
+  }
+} 
