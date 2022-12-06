@@ -5,5 +5,5 @@ interface ICloseIcon {
 }
 
 export const Close: FunctionComponent<ICloseIcon> = ({className}) => (
-  <img src={require("../../svg/close.svg")} className={className} />
+  <img src={require("./close.svg")} className={className} />
 );

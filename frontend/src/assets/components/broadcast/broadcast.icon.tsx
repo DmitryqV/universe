@@ -5,5 +5,5 @@ interface IBroadcastIcon {
 }
 
 export const Broadcast: FunctionComponent<IBroadcastIcon> = ({ className }) => (
-  <img src={require("../../svg/broadcast.svg")} className={className} />
+  <img src={require("./broadcast.svg")} className={className} />
 );

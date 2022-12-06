@@ -5,5 +5,5 @@ interface ISearchIcon {
 }
 
 export const Search: FunctionComponent<ISearchIcon> = ({className}) => (
-  <img src={require("../../svg/search.svg")} className={className} />
+  <img src={require("./search.svg")} className={className} />
 );
