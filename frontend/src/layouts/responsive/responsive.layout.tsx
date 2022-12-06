@@ -1,8 +1,8 @@
 import React, { FunctionComponent } from "react";
 import s from "./responsive.module.scss";
-import { Component } from "../../components/export";
-import { useTypedSelector } from "../../hooks/redux.useTypedSelector";
-import { Modals } from "../../modals/export";
+import { Component } from "@components/export";
+import { useTypedSelector } from "@hooks/redux.useTypedSelector";
+import { Modals } from "@modals/export";
 
 interface IResponsiveLayout {
   children: JSX.Element;

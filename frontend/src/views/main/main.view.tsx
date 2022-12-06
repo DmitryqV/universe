@@ -1,9 +1,9 @@
 import React, { FunctionComponent, useEffect } from "react";
 import s from "./main.module.scss";
-import { Layout } from "../../layouts/export";
-import { Component } from "../../components/export";
-import { useTypedSelector } from "./../../hooks/redux.useTypedSelector";
-import { ICardData } from "./../../store/slices/data/data.slice";
+import { Layout } from "@layouts/export";
+import { Component } from "@components/export";
+import { useTypedSelector } from "@hooks/redux.useTypedSelector";
+import { ICardData } from "@store/slices/data/data.slice";
 
 export const Main: FunctionComponent = () => {
   const payload = useTypedSelector((state) => state.CardData);

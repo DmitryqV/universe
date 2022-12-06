@@ -1,16 +1,56 @@
 {
   "compilerOptions": {
-    "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
-    "noImplicitAny": true,
-    "module": "es6",
-    "target": "es5",
     "allowJs": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "target": "es5",
+    "module": "esnext",
+    "noImplicitAny": true,
     "jsx": "react",
     "typeRoots": [
       "node_modules/@types"
     ],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ],
+      "@components/*": [
+        "./src/components/*"
+      ],
+      "@assets/*": [
+        "./src/assets/*"
+      ],
+      "@hooks/*": [
+        "./src/hooks/*"
+      ],
+      "@layouts/*": [
+        "./src/layouts/*"
+      ],
+      "@modals/*": [
+        "./src/modals/*"
+      ],
+      "@store/*": [
+        "./src/store/*"
+      ],
+      "@views/*": [
+        "./src/views/*"
+      ],
+    },
+    "esModuleInterop": true,
   },
-  "include": ["./ext.d.ts"],
-  "files": ["src/index.tsx"]
+  "include": [
+    "./ext.d.ts",
+    "src",
+    "./src/index.tsx"
+  ],
+  // "files": [
+  //   "src/index.tsx"
+  // ]
 }
