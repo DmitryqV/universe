@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from "react";
 import s from "./person__card.module.scss";
 import { useParams } from "react-router-dom";
-import { Icons } from "../../assets/components/export";
+import { Icons } from "@assets/components/export";
 
 export const PersonCard: FunctionComponent = () => {
   const { username } = useParams();

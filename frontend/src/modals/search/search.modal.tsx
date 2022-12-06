@@ -1,9 +1,9 @@
 import React, { FunctionComponent } from "react";
 import s from "./search__modal.module.scss";
-import { Layout } from "../../layouts/export";
-import { Icons } from "../../assets/components/export";
-import { useTypedSelector } from "../../hooks/redux.useTypedSelector";
-import { useActions } from "../../hooks/redux.useActions";
+import { Layout } from "@layouts/export";
+import { Icons } from "@assets/components/export";
+import { useTypedSelector } from "@hooks/redux.useTypedSelector";
+import { useActions } from "@hooks/redux.useActions";
 
 export const Search: FunctionComponent = () => {
   const payload = useTypedSelector((state) => state.SearchModal);

@@ -28,6 +28,7 @@ const config = {
   ],
   module: {
     rules: [
+      
       {
         test: /\.(ts|tsx)$/i,
         loader: "ts-loader",
@@ -44,6 +45,16 @@ const config = {
     ],
   },
   resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "src"),
+      "@components": path.resolve(__dirname, "src/components"),
+      "@assets": path.resolve(__dirname, "src/assets"),
+      "@hooks": path.resolve(__dirname, "src/hooks"),
+      "@layouts": path.resolve(__dirname, "src/layouts"),
+      "@modals": path.resolve(__dirname, "src/modals"),
+      "@store": path.resolve(__dirname, "src/store"),
+      "@views": path.resolve(__dirname, "src/views"),
+    },
     extensions: [".tsx", ".ts", ".jsx", ".js", ".scss", "..."],
   },
 };

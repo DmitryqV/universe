@@ -1,8 +1,8 @@
 import React, { FunctionComponent } from "react";
 import { useParams, Link } from "react-router-dom";
 import s from "./navbar.module.scss";
-import { Icons } from "../../assets/components/export";
-import { useActions } from "../../hooks/redux.useActions";
+import { Icons } from "@assets/components/export";
+import { useActions } from "@hooks/redux.useActions";
 import { Component } from "../export";
 
 export const Navbar: FunctionComponent = () => {

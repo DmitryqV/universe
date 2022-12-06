@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from "react";
 import s from "./navbar__popup.module.scss";
-import { useTypedSelector } from "./../../hooks/redux.useTypedSelector";
-import { useActions } from "./../../hooks/redux.useActions";
+import { useTypedSelector } from "@hooks/redux.useTypedSelector";
+import { useActions } from "@hooks/redux.useActions";
 
 export const NavbarPopup: FunctionComponent = () => {
   const { changeNavbarPopUpShow } = useActions();
