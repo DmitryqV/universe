@@ -5,5 +5,5 @@ interface IPostIcon {
 }
 
 export const Post: FunctionComponent<IPostIcon> = ({ className }) => (
-  <img src={require("../../svg/post.svg")} className={className} />
+  <img src={require("./post.svg")} className={className} />
 );

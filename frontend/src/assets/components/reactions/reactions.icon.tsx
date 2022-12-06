@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from "react";
 
 export const Reactions: FunctionComponent = () => (
-  <img src={require("../../svg/reactions.svg")} />
+  <img src={require("./reactions.svg")} />
 );
