@@ -68,7 +68,7 @@ export const ContentController: FunctionComponent = () => {
           }}
         >
           Публикации
-          <Icons.Post />
+          <Icons.Post className={payload.currentLayout !== "posts" && s.disabled} />
         </li>
         <li
           className={`${s.content__controll__item} ${
@@ -104,7 +104,7 @@ export const ContentController: FunctionComponent = () => {
           }}
         >
           Эфиры
-          <Icons.Broadcast />
+          <Icons.Broadcast className={payload.currentLayout !== "broadcast" && s.disabled} />
         </li>
         <div
           className={s.content__controll__line}
