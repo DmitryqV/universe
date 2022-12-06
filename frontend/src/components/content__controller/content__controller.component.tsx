@@ -6,10 +6,10 @@ import {Icons} from "@assets/components/export"
 
 export const ContentController: FunctionComponent = () => {
   const payload = useTypedSelector((state) => state.ContentController);
-  const { changeLayout, changeTransform, changeCardData } = useActions();
+  const { ContentControllerChangeLayout, ContentControllerChangeTransform, CardDataChangeCardData } = useActions();
 
   useEffect(() => {
-    changeCardData([
+    CardDataChangeCardData([
       {
         title: "Post title",
         author: "@centenario",
@@ -40,12 +40,12 @@ export const ContentController: FunctionComponent = () => {
             s.content__controll__item__active
           }`}
           onMouseLeave={() =>
-            changeTransform(payload.currentLayout === "posts" ? 0 : 200)
+            ContentControllerChangeTransform(payload.currentLayout === "posts" ? 0 : 200)
           }
-          onMouseMove={() => changeTransform(0)}
+          onMouseMove={() => ContentControllerChangeTransform(0)}
           onClick={() => {
-            changeLayout("posts");
-            changeCardData([
+            ContentControllerChangeLayout("posts");
+            CardDataChangeCardData([
               {
                 title: "Post title",
                 author: "@centenario",
@@ -76,12 +76,12 @@ export const ContentController: FunctionComponent = () => {
             s.content__controll__item__active
           }`}
           onMouseLeave={() =>
-            changeTransform(payload.currentLayout === "broadcast" ? 200 : 0)
+            ContentControllerChangeTransform(payload.currentLayout === "broadcast" ? 200 : 0)
           }
-          onMouseMove={() => changeTransform(200)}
+          onMouseMove={() => ContentControllerChangeTransform(200)}
           onClick={() => {
-            changeLayout("broadcast");
-            changeCardData([
+            ContentControllerChangeLayout("broadcast");
+            CardDataChangeCardData([
               {
                 title: "Broadcast title",
                 author: "@centenario",

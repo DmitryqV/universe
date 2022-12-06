@@ -4,14 +4,14 @@ import { useTypedSelector } from "@hooks/redux.useTypedSelector";
 import { useActions } from "@hooks/redux.useActions";
 
 export const NavbarPopup: FunctionComponent = () => {
-  const { changeNavbarPopUpShow } = useActions();
+  const { NavbarPopupChangeNavbarPopUpShow } = useActions();
   const payload = useTypedSelector((state) => state.NavbarPopup);
 
   return (
     <>
       {payload.show && (
         <ul
-          onMouseLeave={() => changeNavbarPopUpShow(false)}
+          onMouseLeave={() => NavbarPopupChangeNavbarPopUpShow(false)}
           className={s.popup}
         >
           <li className={s.popup__item}>Чаты</li>

@@ -5,7 +5,7 @@ import { useTypedSelector } from "@hooks/redux.useTypedSelector";
 import { Link } from "react-router-dom";
 
 export const Login: FunctionComponent = () => {
-  const { changeEmail, changePassword } = useActions();
+  const { AuthChangeEmail, AuthChangePassword } = useActions();
   const payload = useTypedSelector((state) => state.Auth);
 
   return (
@@ -17,7 +17,7 @@ export const Login: FunctionComponent = () => {
           type="email"
           placeholder="Почта"
           onInput={(e: ChangeEvent<HTMLInputElement>) =>
-            changeEmail(e.target.value)
+            AuthChangeEmail(e.target.value)
           }
         />
         <input
@@ -25,7 +25,7 @@ export const Login: FunctionComponent = () => {
           type="password"
           placeholder="Пароль"
           onInput={(e: ChangeEvent<HTMLInputElement>) =>
-            changePassword(e.target.value)
+            AuthChangePassword(e.target.value)
           }
         />
         <Link

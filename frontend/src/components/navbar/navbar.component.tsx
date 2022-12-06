@@ -6,7 +6,7 @@ import { useActions } from "@hooks/redux.useActions";
 import { Component } from "../export";
 
 export const Navbar: FunctionComponent = () => {
-  const { changeShow, changeNavbarPopUpShow } = useActions();
+  const { SearchModalChangeShow, NavbarPopupChangeNavbarPopUpShow } = useActions();
   const { username } = useParams();
 
   return (
@@ -21,7 +21,7 @@ export const Navbar: FunctionComponent = () => {
           <li className={s.navigation__item}>
             <a
               className={s.navbar__menu__item}
-              onClick={() => changeShow(true)}
+              onClick={() => SearchModalChangeShow(true)}
             >
               поиск
               <Icons.Search />
@@ -36,7 +36,7 @@ export const Navbar: FunctionComponent = () => {
         </ul>
         <div
           className={s.user__content}
-          onClick={() => changeNavbarPopUpShow(true)}
+          onClick={() => NavbarPopupChangeNavbarPopUpShow(true)}
         >
           <Link to={`/@${username}`} className={s.username}>
             {username}

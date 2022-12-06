@@ -19,10 +19,10 @@ export const ContentControllerSlice = createSlice({
   name: "ContentController",
   initialState,
   reducers: {
-    changeTransform: (state, action) => {
+    ContentControllerChangeTransform: (state, action) => {
       state.transform = action.payload;
     },
-    changeLayout: (state, action) => {
+    ContentControllerChangeLayout: (state, action) => {
       state.currentLayout = action.payload;
     },
   },

@@ -7,7 +7,7 @@ import { useActions } from "@hooks/redux.useActions";
 
 export const Search: FunctionComponent = () => {
   const payload = useTypedSelector((state) => state.SearchModal);
-  const { changeShow } = useActions();
+  const { SearchModalChangeShow } = useActions();
   return (
     <>
       {payload.show && (
@@ -20,7 +20,7 @@ export const Search: FunctionComponent = () => {
                 placeholder="Type something"
                 type="text"
               />
-              <div onClick={() => changeShow(false)}><Icons.Close className={s.close__icon} /></div>
+              <div onClick={() => SearchModalChangeShow(false)}><Icons.Close className={s.close__icon} /></div>
             </div>
           </Layout.Responsive>
         </div>
