@@ -1,5 +1,9 @@
 import React, { FunctionComponent } from "react";
 
-export const Post: FunctionComponent = () => (
-  <img src={require("../../svg/post.svg")} />
+interface IPostIcon {
+  [className: string]: string;
+}
+
+export const Post: FunctionComponent<IPostIcon> = ({ className }) => (
+  <img src={require("../../svg/post.svg")} className={className} />
 );

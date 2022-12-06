@@ -1,5 +1,9 @@
 import React, { FunctionComponent } from "react";
 
-export const Broadcast: FunctionComponent = () => (
-  <img src={require("../../svg/broadcast.svg")} />
+interface IBroadcastIcon {
+  [className: string]: string;
+}
+
+export const Broadcast: FunctionComponent<IBroadcastIcon> = ({ className }) => (
+  <img src={require("../../svg/broadcast.svg")} className={className} />
 );
