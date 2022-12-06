@@ -1,12 +1,12 @@
 import React, { FunctionComponent } from "react";
 import { useParams, Link } from "react-router-dom";
 import s from "./navbar.module.scss";
-import { Icons } from "@assets/components/export";
 import { useActions } from "@hooks/redux.useActions";
 import { Component } from "../export";
 
 export const Navbar: FunctionComponent = () => {
-  const { SearchModalChangeShow, NavbarPopupChangeNavbarPopUpShow } = useActions();
+  const { SearchModalChangeShow, NavbarPopupChangeNavbarPopUpShow } =
+    useActions();
   const { username } = useParams();
 
   return (
@@ -24,14 +24,10 @@ export const Navbar: FunctionComponent = () => {
               onClick={() => SearchModalChangeShow(true)}
             >
               поиск
-              <Icons.Search />
             </a>
           </li>
           <li className={s.navigation__item}>
-            <a className={s.navbar__menu__item}>
-              лента
-              <Icons.Post />
-            </a>
+            <a className={s.navbar__menu__item}>лента</a>
           </li>
         </ul>
         <div
