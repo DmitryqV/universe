@@ -50,7 +50,4 @@
     "src",
     "./src/index.tsx"
   ],
-  // "files": [
-  //   "src/index.tsx"
-  // ]
 }
