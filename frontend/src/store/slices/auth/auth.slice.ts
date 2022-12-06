@@ -14,10 +14,10 @@ export const AuthSlice = createSlice({
   name: "Auth",
   initialState,
   reducers: {
-    changeEmail: (state, action) => {
+    AuthChangeEmail: (state, action) => {
       state.email = action.payload;
     },
-    changePassword: (state, action) => {
+    AuthChangePassword: (state, action) => {
       state.password = action.payload;
     },
   },

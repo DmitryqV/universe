@@ -13,7 +13,7 @@ export const SearchModalSlice = createSlice({
   name: "SearchModal",
   initialState,
   reducers: {
-    changeShow: (state, action) => {
+    SearchModalChangeShow: (state, action) => {
       state.show = action.payload;
     },
   },

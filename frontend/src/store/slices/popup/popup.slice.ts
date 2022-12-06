@@ -13,7 +13,7 @@ export const NavbarPopupSlice = createSlice({
   name: "NavbarPopup",
   initialState,
   reducers: {
-    changeNavbarPopUpShow: (state, action) => {
+    NavbarPopupChangeNavbarPopUpShow: (state, action) => {
       state.show = action.payload;
     },
   },

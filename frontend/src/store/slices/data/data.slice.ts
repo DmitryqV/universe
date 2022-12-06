@@ -24,7 +24,7 @@ export const CardDataSlice = createSlice({
   name: "CardData",
   initialState,
   reducers: {
-    changeCardData: (state, action) => {
+    CardDataChangeCardData: (state, action) => {
       state.data = action.payload;
     },
   },
