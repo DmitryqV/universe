@@ -2,12 +2,15 @@ import React, { FunctionComponent } from "react";
 import { useParams, Link } from "react-router-dom";
 import s from "./navbar.module.scss";
 import { useActions } from "@hooks/redux.useActions";
+import { useTypedSelector } from "@hooks/redux.useTypedSelector";
 import { Component } from "../export";
 
 export const Navbar: FunctionComponent = () => {
   const { SearchModalChangeShow, NavbarPopupChangeNavbarPopUpShow } =
     useActions();
+    const payload = useTypedSelector((state) => state.NavbarPopup);
   const { username } = useParams();
+  
 
   return (
     <>
@@ -32,7 +35,7 @@ export const Navbar: FunctionComponent = () => {
         </ul>
         <div
           className={s.user__content}
-          onClick={() => NavbarPopupChangeNavbarPopUpShow(true)}
+          onClick={() => NavbarPopupChangeNavbarPopUpShow(!payload.show)}
         >
           <Link to={`/@${username}`} className={s.username}>
             {username}

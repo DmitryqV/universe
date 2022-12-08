@@ -42,6 +42,9 @@
       "@views/*": [
         "./src/views/*"
       ],
+      "@ui/*": [
+        "./src/ui/*"
+      ],
     },
     "esModuleInterop": true,
   },
