@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from "react";
-import "./ui/null.scss";
+import "@ui/null.module.scss";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import * as View from "@views/export";
