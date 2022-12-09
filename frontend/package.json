@@ -2,7 +2,7 @@
   "version": "1.0.0",
   "description": "My webpack project",
   "name": "my-webpack-project",
-  "homepage": "https://dmitryqv.github.io/universe/#",
+  "homepage": "https://dmitryqv.github.io/universe/",
   "scripts": {
     "predeploy": "yarn install & yarn build",
     "deploy": "gh-pages -d dist",
