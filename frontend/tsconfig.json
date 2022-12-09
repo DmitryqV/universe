@@ -13,6 +13,7 @@
     "module": "esnext",
     "noImplicitAny": true,
     "jsx": "react",
+    "lib": ["DOM"],
     "typeRoots": [
       "node_modules/@types"
     ],

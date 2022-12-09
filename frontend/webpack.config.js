@@ -19,9 +19,9 @@ const config = {
     hot: true,
   },
   plugins: [
-    new CopyWebpackPlugin({ patterns: [{ from: "src/public", to: "public" }] }),
+    new CopyWebpackPlugin({ patterns: [{ from: "./public", to: "public" }] }),
     new HtmlWebpackPlugin({
-      template: "./src/public/index.html",
+      template: "./public/index.html",
     }),
 
     new MiniCssExtractPlugin(),
