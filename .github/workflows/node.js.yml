@@ -17,12 +17,19 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Use Node.js ${{ matrix.node-version }}
-      uses: ./frontend
+    
+      uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'yarn'
-    - run: yarn ci    
-    - run: yarn build
+
+    - run: |
+        cd frontend
+        yarn ci
+        
+    - run: |
+        cd frontend
+        yarn build
 
 
     - name: Deploy 🚀
