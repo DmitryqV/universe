@@ -15,4 +15,3 @@ const AllActions = {
 };
 
 export const useActions = () => bindActionCreators(AllActions, useDispatch());
-console.log(1);
