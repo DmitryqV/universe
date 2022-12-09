@@ -1,10 +1,12 @@
+@import "../../ui/variables.module.scss";
+
 .backdrop {
   height: 100%;
   width: 100%;
   left: 0;
   position: fixed;
   z-index: 999;
-  background-color: #ffffff95;
+  background-color: $main_white_95_color;
 }
 
 .search__container {

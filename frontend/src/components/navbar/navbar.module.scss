@@ -1,7 +1,9 @@
+@import "../../ui/variables.module.scss";
+
 .navbar {
   height: 80px;
   width: 100%;
-  color: #212121;
+  color: $main_black_color;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,7 +17,7 @@
 .username {
   cursor: pointer;
   text-decoration: none;
-  color: #2b2b2b;
+  color: $main_gray_2b_color;
   font-family: "Inter";
   line-height: 24px;
 }
@@ -33,7 +35,7 @@
 .avatar {
   width: 48px;
   height: 48px;
-  background-color: #2b2b2b;
+  background-color: $main_gray_2b_color;
   border-radius: 50%;
 }
 
