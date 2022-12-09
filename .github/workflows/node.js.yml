@@ -1,10 +1,9 @@
 name: Deploy CI
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
-
+    branches: ["main"]
 
 jobs:
   build:
@@ -12,28 +11,27 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14.x, 16.x, 18.x]
+        node-version: [16.x]
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
-    
-      uses: actions/setup-node@v3
-      with:
-        cache-dependency-path: frontend/yarn.lock
-        node-version: ${{ matrix.node-version }}
-        cache: 'yarn'
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
 
-    - run: |
-        cd frontend
-        yarn ci
-        
-    - run: |
-        cd frontend
-        yarn build
+        uses: actions/setup-node@v3
+        with:
+          cache-dependency-path: frontend/yarn.lock
+          node-version: ${{ matrix.node-version }}
+          cache: "yarn"
 
+      - run: |
+          cd frontend
+          yarn ci
 
-    - name: Deploy 🚀
-      uses: JamesIves/github-pages-deploy-action@v4
-      with:
-        folder: dist 
+      - run: |
+          cd frontend
+          yarn build
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist
