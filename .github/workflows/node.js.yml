@@ -23,10 +23,12 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: "yarn"
 
+      - name: Use yarn ci
       - run: |
           cd frontend
           yarn ci
 
+      - name: Use yarn build
       - run: |
           cd frontend
           yarn build
@@ -34,4 +36,4 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: dist
+          folder: frontend/dist
