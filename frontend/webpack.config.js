@@ -21,7 +21,7 @@ const config = {
   plugins: [
     // new CopyWebpackPlugin({ patterns: [{ from: "./public", to: "public" }] }),
     new HtmlWebpackPlugin({
-      template: "../index.html",
+      template: "./index.html",
     }),
 
     new MiniCssExtractPlugin(),
