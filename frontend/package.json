@@ -4,6 +4,7 @@
   "name": "my-webpack-project",
   "homepage": "https://dmitryqv.github.io/universe/",
   "scripts": {
+    "ci": "yarn install --frozen-lockfile",
     "predeploy": "yarn install & yarn build",
     "deploy": "gh-pages -d dist",
     "build": "webpack --mode=production --node-env=production",
