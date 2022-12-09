@@ -2,10 +2,12 @@ name: Deploy CI
 
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
+    branches: ['main']
+    paths: ['frontend/**']
+  pull_request: 
+    branches: ['main']
+    paths: ['frontend/**']
+  
 jobs:
   build:
 
