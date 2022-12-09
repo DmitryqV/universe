@@ -5,7 +5,7 @@
   "homepage": "https://dmitryqv.github.io/universe/",
   "scripts": {
     "predeploy": "yarn install & yarn build",
-    "deplay": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "build": "webpack --mode=production --node-env=production",
     "start": "webpack serve"
   },
