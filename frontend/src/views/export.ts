@@ -4,5 +4,8 @@ import { Main } from "./main/main.view";
 import { Channel } from "./channel/channel.view";
 
 export const View = {
-    Channel, Main, Login, Error
-}
+  Channel,
+  Main,
+  Login,
+  Error,
+};
