@@ -1,1 +1,1 @@
-export namespace App {}
+export namespace App { }
