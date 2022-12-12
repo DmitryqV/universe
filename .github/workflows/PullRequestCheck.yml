@@ -1,4 +1,4 @@
-name: Deploy CI
+name: PullRequestCheck CI
 on:
   pull_request:
     branches: ["main"]
