@@ -21,4 +21,4 @@ jobs:
         run: |
           cd frontend
           yarn ci
-          yarn buildname: NodeJS with Webpack
+          yarn build
