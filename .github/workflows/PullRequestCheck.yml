@@ -1,0 +1,24 @@
+name: PullRequestCheck CI
+on:
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js 16.x
+
+        uses: actions/setup-node@v3
+        with:
+          cache-dependency-path: frontend/yarn.lock
+          node-version: 16.x
+          cache: "yarn"
+
+      - name: Build
+        run: |
+          cd frontend
+          yarn ci
+          yarn build
