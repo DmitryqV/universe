@@ -1,7 +1,5 @@
 name: Deploy CI
 on:
-  push:
-    branches: ["main"]
   pull_request:
     branches: ["main"]
 
@@ -27,8 +25,3 @@ jobs:
           cd frontend
           yarn ci
           yarn build
-
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          folder: frontend/dist
