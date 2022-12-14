@@ -46,6 +46,9 @@
       "@ui/*": [
         "./src/ui/*"
       ],
+      "@socket/*": [
+        "./src/web__sockets/*"
+      ],
     },
     "esModuleInterop": true,
   },
