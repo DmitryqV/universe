@@ -1,9 +1,10 @@
 import { Module } from '@nestjs/common';
 import { AuthModule } from './auth/auth.module';
-import { ChannelSocketsGateway } from './channel-sockets/channel-sockets.gateway';
+import { ChannelSocketsGateway } from './channel/channel.gateway';
+import { UserModule } from './user/user.module';
 
 @Module({
-  imports: [AuthModule],
+  imports: [AuthModule, UserModule],
   providers: [ChannelSocketsGateway],
 })
 export class AppModule {}
