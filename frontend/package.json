@@ -1,4 +1,4 @@
-{  
+{
   "version": "1.0.0",
   "description": "My webpack project",
   "name": "my-webpack-project",
@@ -20,6 +20,7 @@
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.4.3",
+    "socket.io-client": "^4.5.4",
     "style-loader": "^3.3.1",
     "typescript": "^4.8.4",
     "webpack": "^5.74.0",

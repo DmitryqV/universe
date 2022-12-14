@@ -15,10 +15,9 @@ export class ChannelSocketsGateway {
     @MessageBody() payload: ChannelWebSocketDTO,
     @ConnectedSocket() client: Socket,
   ) {
-    console.log(`Socket: ${client.id} \n send message: ${payload}`);
-
-    client.emit('channel', { ...payload, socket: client });
-    client.broadcast.emit('channel', { ...payload, socket: client });
+    console.log(`Socket: ${client.id} \n send message: ${JSON.stringify(payload)}`);
+    client.emit('channel', { ...payload, socket: client.id });
+    client.broadcast.emit('channel', { ...payload, socket: client.id });
   }
 
   handleDisconnect(client: Socket) {

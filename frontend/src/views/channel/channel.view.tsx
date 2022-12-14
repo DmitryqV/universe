@@ -1,10 +1,14 @@
 import React, { FunctionComponent } from "react";
 import { Layout } from "@layouts/export";
+import { SocketCore } from "@socket/export";
 import s from "./channel.module.scss";
 
 export const Channel: FunctionComponent = () => {
   return (
-    <section className={s.channel__backdrop}>
+    <section
+      className={s.channel__backdrop}
+      onClick={() => SocketCore.socket.emit("channel", { message: "1234" })}
+    >
       <Layout.Responsive>
         <section className={s.channel__wrapper}>
           <section className={s.channel__list}>
