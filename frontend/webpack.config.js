@@ -53,6 +53,7 @@ const config = {
       "@store": path.resolve(__dirname, "src/store"),
       "@views": path.resolve(__dirname, "src/views"),
       "@ui": path.resolve(__dirname, "src/ui"),
+      "@socket": path.resolve(__dirname, "src/web__sockets"),
     },
     extensions: [".tsx", ".ts", ".jsx", ".js", ".scss", "..."],
   },
