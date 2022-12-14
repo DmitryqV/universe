@@ -6,9 +6,8 @@ import { useTypedSelector } from "@hooks/redux.useTypedSelector";
 import { Component } from "../export";
 
 export const Navbar: FunctionComponent = () => {
-  const { SearchModalChangeShow, NavbarPopupChangeNavbarPopUpShow } =
-    useActions();
-    const payload = useTypedSelector((state) => state.NavbarPopup);
+  const { SearchModalChangeShow, NavbarPopupChangeNavbarPopUpShow } = useActions();
+  const payload = useTypedSelector((state) => state.NavbarPopup);
   const { username } = useParams();
   
 
