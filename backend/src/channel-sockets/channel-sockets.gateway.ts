@@ -17,8 +17,8 @@ export class ChannelSocketsGateway {
   ) {
     console.log(`Socket: ${client.id} \n send message: ${payload}`);
 
-    client.emit('chat', { ...payload, socket: client });
-    client.broadcast.emit('chat', { ...payload, socket: client });
+    client.emit('channel', { ...payload, socket: client });
+    client.broadcast.emit('channel', { ...payload, socket: client });
   }
 
   handleDisconnect(client: Socket) {
