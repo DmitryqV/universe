@@ -5,11 +5,11 @@ import { Routes, Route, HashRouter } from "react-router-dom";
 import { View } from "@views/export";
 import { Provider } from "react-redux";
 import { store } from "@store/store";
-import { socket } from "./web__sockets/socket";
+import { SocketCore } from "@socket/export";
 
 const AppRouting: FunctionComponent = () => {
   useEffect(() => {
-    socket.on("channel", (e: any) => {
+    SocketCore.socket.on("channel", (e: any) => {
       console.log(e);
     });
   }, []);
