@@ -1,5 +1,5 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { ChannelSocketsGateway } from './channel-sockets.gateway';
+import { ChannelSocketsGateway } from './channel.gateway';
 
 describe('ChannelSocketsGateway', () => {
   let gateway: ChannelSocketsGateway;
