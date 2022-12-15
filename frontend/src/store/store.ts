@@ -6,6 +6,7 @@ import { ContentControllerReducer } from "./slices/controller/controller.slice";
 import { CardDataReducer } from './slices/data/data.slice';
 import { SearchModalReducer } from "./slices/modal/search.modal.slice";
 import { NavbarPopupReducer } from './slices/popup/popup.slice';
+import { ChannelControllerReducer } from "./slices/channel/channel.slice";
 
 export const store = configureStore({
   reducer: {
@@ -14,6 +15,7 @@ export const store = configureStore({
     CardData: CardDataReducer,
     SearchModal: SearchModalReducer,
     NavbarPopup: NavbarPopupReducer,
+    Channel: ChannelControllerReducer,
   },
   middleware: [thunk],
 });
