@@ -16,11 +16,7 @@ import {
 import { Server, Socket } from 'socket.io';
 import { UserService } from '../user/user.service';
 
-@WebSocketGateway(81, {
-  cors: {
-    origin: '*',
-  },
-})
+@WebSocketGateway(81)
 export class ChannelSocketsGateway
   implements OnGatewayConnection, OnGatewayDisconnect
 {
