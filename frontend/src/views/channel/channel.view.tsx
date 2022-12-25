@@ -8,10 +8,7 @@ export const Channel: FunctionComponent = () => {
   const payload = useTypedSelector((state) => state.Channel);
 
   return (
-    <section
-      className={s.channel__backdrop}
-      onClick={() => SocketCore.socket.emit("channel", { message: "1234" })}
-    >
+    <section className={s.channel__backdrop}>
       <Layout.Responsive>
         <section className={s.channel__wrapper}>
           <section className={s.channel__list}>

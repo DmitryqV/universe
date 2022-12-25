@@ -2,7 +2,6 @@ import React, { FunctionComponent, ChangeEvent } from "react";
 import s from "./login.module.scss";
 import { useActions } from "@hooks/redux.useActions";
 import { useTypedSelector } from "@hooks/redux.useTypedSelector";
-import { Link } from "react-router-dom";
 
 export const Login: FunctionComponent = () => {
   const { AuthChangeEmail, AuthChangePassword } = useActions();
@@ -28,13 +27,12 @@ export const Login: FunctionComponent = () => {
             AuthChangePassword(e.target.value)
           }
         />
-        <Link
+        <button
           onClick={() => console.log(payload)}
           className={s.button}
-          to={"/@centenario"}
         >
           Войти
-        </Link>
+        </button>
       </section>
     </section>
   );
