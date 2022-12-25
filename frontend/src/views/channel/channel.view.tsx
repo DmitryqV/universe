@@ -10,15 +10,18 @@ export const Channel: FunctionComponent = () => {
     useActions();
   const payload = useTypedSelector((state) => state.Channel);
   useEffect(() => {
-    SocketCore.socket.on("channel__join", (e: any) =>
+    SocketCore.socket.emit("join_room", {
+      roomName: "test1",
+      user: { userId: Math.random().toString(), userName: "tensenrey" },
+    });
+
+    SocketCore.socket.on("join_room", (e: any) =>
       ChannelControllerJoinEvent(e)
     );
-    SocketCore.socket.on("channel__leave", (e: any) =>
+
+    SocketCore.socket.on("channel_leave", (e: any) =>
       ChannelControllerLeaveEvent(e)
     );
-    SocketCore.socket.on("channel", (e: any) => {
-      console.log(e);
-    });
   }, []);
 
   return (
