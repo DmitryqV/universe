@@ -3,26 +3,9 @@ import { Layout } from "@layouts/export";
 import { SocketCore } from "@socket/export";
 import s from "./channel.module.scss";
 import { useTypedSelector } from "@hooks/redux.useTypedSelector";
-import { useActions } from "@hooks/redux.useActions";
 
 export const Channel: FunctionComponent = () => {
-  const { ChannelControllerJoinEvent, ChannelControllerLeaveEvent } =
-    useActions();
   const payload = useTypedSelector((state) => state.Channel);
-  useEffect(() => {
-    SocketCore.socket.emit("join_room", {
-      roomName: "test1",
-      user: { userId: Math.random().toString(), userName: "tensenrey" },
-    });
-
-    SocketCore.socket.on("join_room", (e: any) =>
-      ChannelControllerJoinEvent(e)
-    );
-
-    SocketCore.socket.on("channel_leave", (e: any) =>
-      ChannelControllerLeaveEvent(e)
-    );
-  }, []);
 
   return (
     <section
